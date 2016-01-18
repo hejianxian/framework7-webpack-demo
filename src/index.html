@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="style.css">
+    <title>CNode社区</title>
+  </head>
+  <body class="">
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">
+                    <div class="panel-avatar"><img src="" alt=""></div>
+                    <h3>Hejx</h3>
+                    <p>example@qq.com</p>
+                </div>
+                <div class="new-message">
+                    <i class="icon icon-tongzhihover"></i>
+                    <span>1</span>
+                </div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-all"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">全部</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-good"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">精华</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-share1"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">分享</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-ask"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">问答</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-zhaoping"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">招聘</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                  <li>
+                      <a href="#" class="item-link close-panel">
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-set"></i></div>
+                            <div class="item-inner">
+                            <div class="item-title">设置</div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                </ul>
+              </div>
+              <!--end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+          <div data-page="index" class="page main-page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">CNode社区</div>
+                <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+              </div>
+            </div>
+            <a href="#" class="floating-button color-pink">
+                <i class="icon icon-plus"></i>
+            </a>
+            <div class="page-content pull-to-refresh-content infinite-scroll" data-ptr-distance="55" data-distance="100">
+                <!-- 默认的下拉刷新层 -->
+                <div class="pull-to-refresh-layer">
+                    <div class="preloader"></div>
+                    <div class="pull-to-refresh-arrow"></div>
+                </div>  
+                <div class="list-block media-list">
+                    <ul></ul>
+                </div>
+                <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="app.js"></script>
+    
+    <script src="http://localhost:8080/webpack-dev-server.js"></script>
+  </body>
+</html>

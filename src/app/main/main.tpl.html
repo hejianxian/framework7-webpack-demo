@@ -1,0 +1,14 @@
+{{#each data}}
+<li data-id="{{id}}">
+    <a href="page/detail.html?id={{id}}" class="item-link item-content">
+        <div class="item-media"><img src="{{author.avatar_url}}" width="80"></div>
+        <div class="item-inner">
+            <div class="item-text {{tab}} {{#if top}}top{{/if}}"><span>{{type}}</span>{{title}}</div>
+            <div class="item-title-row">
+                <div class="item-title"><span>{{reply_count}}</span> / {{visit_count}}</div>
+                <div class="item-after">{{author.loginname}}</div>
+            </div>
+        </div>
+    </a>
+</li>
+{{/each}}

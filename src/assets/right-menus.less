@@ -1,0 +1,61 @@
+.panel{
+    .navbar{
+        height: 170px;
+        .panel-avatar{
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-top: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        h3{
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0;
+        }
+        p{
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0;
+        }
+        .new-message{
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            width: 40px;
+            height: 40px;
+            i{
+                color: #fff;
+                font-size: 28px;
+            }
+            span{
+                background: red;
+                color: #fff;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                text-align: center;
+                line-height: 18px;
+                font-size: 14px;
+                right: 5px;
+                top: 5px;
+            }
+        }
+    }
+    .page-content{
+        padding-top: 170px;
+    }
+    .list-block{
+        margin: 0;
+        margin-top: 5px;
+        ul{
+            &:before{
+                content: none;
+            }
+        }
+    }
+}
