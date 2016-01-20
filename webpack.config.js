@@ -27,7 +27,7 @@ module.exports = {
     loaders: [
         {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
         {test: /\.less$/, loader: ExtractTextPlugin.extract( "style-loader", 'css-loader?sourceMap!less-loader!autoprefixer-loader')},
-        {test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+        {test: /\.js$/, loader: 'babel', exclude: /(node_modules|bower_components)/ },
         {test: /\.html$/, loader: 'html'},
         {test: /\.png$/, loader: 'url?limit=8192&mimetype=image/png'},
         {test: /\.jpe?g$/, loader: 'url?limit=8192&mimetype=image/jpg'},
