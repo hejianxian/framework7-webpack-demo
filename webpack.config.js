@@ -20,13 +20,13 @@ module.exports = {
         'framework7': __f7Path + '/js/framework7.js',
         'framework7.material.css': __f7Path + '/css/framework7.material.css',
         'framework7.material.color.css': __f7Path + '/css/framework7.material.colors.css'
-    }  
+    }
   },
   // how modules should be transformed
   module: {
     loaders: [
         {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
-        {test: /\.less$/, loader: ExtractTextPlugin.extract( "style-loader", 'css-loader?sourceMap!less-loader')},
+        {test: /\.less$/, loader: ExtractTextPlugin.extract( "style-loader", 'css-loader?sourceMap!less-loader!autoprefixer-loader')},
         {test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
         {test: /\.html$/, loader: 'html'},
         {test: /\.png$/, loader: 'url?limit=8192&mimetype=image/png'},
@@ -42,12 +42,11 @@ module.exports = {
   // configure babel-loader.
   babel: {
     presets: ['es2015'],
-    plugins: ['transform-runtime', 'transform-es2015-for-of']
+    plugins: ['transform-runtime']
   },
   plugins: [
       new ExtractTextPlugin("style.css", {
-          allChunks: true,
-          disable: false
+          allChunks: true
       })
   ]
 }

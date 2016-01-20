@@ -23,5 +23,5 @@ var app = {
         mainModule.init();
         Router.init();
     }
-}
+};
 app.init();
