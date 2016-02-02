@@ -26,6 +26,16 @@ function request(params) {
             params[key] = val;
         }
     });
+    
+    var _successFn = params.success;
+    params.success = function(result, status, xhr){
+        if (false) {
+            //拦截
+            return;
+        }
+        _successFn(result, status, xhr);
+    };
+    
     if (params.type.toUpperCase() === 'POST' && params.contentType && params.contentType.indexOf('json') != -1) {
         params.data = JSON.stringify(params.data);
     }
