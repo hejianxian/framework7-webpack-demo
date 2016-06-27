@@ -1,7 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var __f7Path = __dirname + '/bower_components/framework7/dist';
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+var __f7Path = __dirname + '/node_modules/framework7/dist';
 
 module.exports = {
   // the main entry of our app
@@ -26,7 +29,7 @@ module.exports = {
   module: {
     loaders: [
         {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
-        {test: /\.less$/, loader: ExtractTextPlugin.extract( "style-loader", 'css-loader?sourceMap!less-loader!autoprefixer-loader')},
+        {test: /\.less$/, loader: ExtractTextPlugin.extract( "style-loader", 'css-loader?sourceMap!autoprefixer-loader!less-loader')},
         {test: /\.js$/, loader: 'babel', exclude: /(node_modules|bower_components)/ },
         {test: /\.html$/, loader: 'html'},
         {test: /\.png$/, loader: 'url?limit=8192&mimetype=image/png'},
@@ -47,6 +50,16 @@ module.exports = {
   plugins: [
       new ExtractTextPlugin("style.css", {
           allChunks: true
-      })
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+          compress: {
+              warnings: false
+          }
+      }),
+      new webpack.optimize.DedupePlugin(),
+      new CopyWebpackPlugin([
+          {from: './src/index.html', to: './index.html'},
+          {from: './src/page', to: './page' }
+      ])
   ]
 }
