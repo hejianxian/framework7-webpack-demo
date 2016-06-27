@@ -1,6 +1,8 @@
 # framework7-webpack-demo
 基于Framework7，使用webpack＋gulp搭建的前端项目架构
 
+*branch: webpack* 该分支仅使用了webpack，去掉了gulp和bower
+
 <img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="280">
 
 ### 安装
