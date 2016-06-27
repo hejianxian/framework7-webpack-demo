@@ -22,6 +22,18 @@ var app = {
         
         mainModule.init();
         Router.init();
+    },
+    // 如果需要调用cordova 需要在deviceReady后 调用 mainModule.init()
+    deviceReady(){
+        document.addEventListener('deviceready', function() {
+            // 绑定返回事件
+            document.addEventListener("backbutton", function(){
+                app.cordovaBackEvent();
+            }, false);
+        }, false);
+    },
+    cordovaBackEvent(){
+        // 物理返回事件
     }
 };
 app.init();

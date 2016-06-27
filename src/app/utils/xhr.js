@@ -31,7 +31,6 @@ function request(params) {
     params.success = function(result, status, xhr){
         if (false) {
             //拦截
-            return;
         }
         _successFn(result, status, xhr);
     };
