@@ -3,9 +3,11 @@
 
 > branch: webpack 该分支仅使用了webpack，去掉了gulp和bower
 
+> yo generator: [generator-workplus-framework7](https://github.com/WorkPlusFE/generator-workplus-framework7)
+
 [在线demo](https://hejx.herokuapp.com/f7/)，请使用浏览器(chrome)手机模式浏览。
 
-<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="280">
+<!--<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="280">-->
 
 ### 安装
 ```
