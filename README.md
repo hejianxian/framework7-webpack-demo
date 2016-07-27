@@ -4,7 +4,7 @@
 
 基于Framework7，使用webpack＋gulp搭建的前端项目架构
 
-> branch: webpack 该分支仅使用了webpack，去掉了gulp和bower
+> 推荐使用webpack分支，该分支仅使用了webpack，去掉了gulp和bower，更加方便
 
 
 [在线demo](https://hejx.herokuapp.com/f7/)，请使用浏览器(chrome)手机模式浏览。
