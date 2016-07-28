@@ -15,7 +15,7 @@ git clone https://github.com/Alex-fun/framework7-webpack-demo.git
 
 cd framework7-webpack-demo
 
-npm install 
+npm install && bower install
 
 ```
 
