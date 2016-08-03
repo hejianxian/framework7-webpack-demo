@@ -5,6 +5,7 @@
 基于Framework7，使用webpack＋gulp搭建的前端项目架构
 
 > 推荐使用webpack分支，该分支仅使用了webpack，去掉了gulp和bower，更加方便
+> git clone -b webpack https://github.com/Alex-fun/framework7-webpack-demo.git
 
 
 [在线demo](https://hejx.herokuapp.com/f7/)，请使用浏览器(chrome)手机模式浏览。
