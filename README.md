@@ -39,3 +39,7 @@ gulp build-dev
 ``` bash
 gulp build
 ```
+
+### LICENSE
+MIT
+
