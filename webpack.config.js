@@ -5,7 +5,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var __f7Path = __dirname + '/node_modules/framework7/dist';
 
-module.exports = {
+var config = {
   // the main entry of our app
   entry: {
       app: ['./src/app/index.js']
@@ -50,15 +50,23 @@ module.exports = {
       new ExtractTextPlugin("style.css", {
           allChunks: true
       }),
-      new webpack.optimize.UglifyJsPlugin({
-          compress: {
-              warnings: false
-          }
-      }),
-      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.OccurrenceOrderPlugin(),
       new CopyWebpackPlugin([
           {from: './src/index.html', to: './index.html'},
           {from: './src/page', to: './page' }
       ])
   ]
+};
+
+if (process.env.NODE_ENV === 'production') {
+    config.plugins.concat([
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ]);
 }
+
+module.exports = config;
