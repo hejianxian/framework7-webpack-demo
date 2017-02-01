@@ -1,8 +1,8 @@
 'use strict';
 
 import 'framework7';
-import 'framework7.material.css';
-import 'framework7.material.color.css';
+import 'framework7/dist/css/framework7.material.css';
+import 'framework7/dist/css/framework7.material.colors.css';
 import '../assets/app.less';
 
 import mainModule from './main/main';
@@ -19,7 +19,7 @@ var app = {
         myApp.addView('.view-main', {
             domCache: true
         });
-        
+
         mainModule.init();
         Router.init();
     },
