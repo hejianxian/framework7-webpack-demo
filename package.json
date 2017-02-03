@@ -38,7 +38,6 @@
     "webpack-merge": "^2.6.1"
   },
   "dependencies": {
-    "framework7": "^1.5.2",
-    "graceful-fs": "^4.1.11"
+    "framework7": "^1.5.2"
   }
 }

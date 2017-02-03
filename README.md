@@ -1,10 +1,16 @@
 # framework7-webpack-demo
 
-<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="200" center>
-
 > A demo project for using Framework7 with Webpack2.0 via Babel!
 
+<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="200" center>
+
 [在线demo](https://hejx.herokuapp.com/f7/)，请使用浏览器(chrome)手机模式浏览。
+
+### Dependencies
+
+* Framework7
+* Webpack2.0
+* Babel
 
 ### Download
 
