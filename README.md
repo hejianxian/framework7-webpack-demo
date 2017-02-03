@@ -1,4 +1,4 @@
-![Preview](https://camo.githubusercontent.com/2491ce76f7baf4dd8c31a273c5ced04196cb53ba/68747470733a2f2f646e2d636e6f64652e71626f782e6d652f46676779536169665853684b58782d527039633567786836476f7830)
+<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="200">
 
 # framework7-webpack-demo
 
@@ -27,6 +27,16 @@ npm install
 
 ```bash
 npm run dev
+```
+
+If need proxy, you can use [devserver-proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy) to enable proxying.
+
+Just like:
+
+```js
+proxy: {
+  "/api": "http://localhost:8081"
+}
 ```
 
 ### Build
