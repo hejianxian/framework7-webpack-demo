@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server -d --progress --colors --inline --hot --port 8080",
-    "build": "cross-env NODE_ENV=production webpack -p --colors"
+    "dev": "webpack-dev-server --config build/webpack.config.js -d --progress --colors --inline --hot --port 8080",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js -p --colors"
   },
   "author": "Hejx",
   "license": "MIT",
