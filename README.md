@@ -47,5 +47,5 @@ npm run build
 
 ### LICENSE
 
-MIT
+MIT [@Hejx](https://github.com/hejianxian/)
 
