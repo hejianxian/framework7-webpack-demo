@@ -1,16 +1,16 @@
+![Preview](https://camo.githubusercontent.com/2491ce76f7baf4dd8c31a273c5ced04196cb53ba/68747470733a2f2f646e2d636e6f64652e71626f782e6d652f46676779536169665853684b58782d527039633567786836476f7830)
+
 # framework7-webpack-demo
 
 > A demo project for using Framework7 with Webpack2.0 via Babel!
 
-<img src="https://dn-cnode.qbox.me/FggySaifXShKXx-Rp9c5gxh6Gox0" width="200" center>
-
-[在线demo](https://hejx.herokuapp.com/f7/)，请使用浏览器(chrome)手机模式浏览。
+[Online Demo](https://hejx.herokuapp.com/f7/)
 
 ### Dependencies
 
-* Framework7
-* Webpack2.0
-* Babel
+* [Framework7](http://framework7.io/)
+* [Webpack2.0](https://webpack.js.org/)
+* [Babel](https://babeljs.io/)
 
 ### Download
 
