@@ -5,8 +5,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const rules = require('./rules');
+const config = require('./config');
 
-const config = {
+const webpackConfig = {
   entry: {
       app: ['./src/app/index.js']
   },
@@ -18,6 +19,7 @@ const config = {
   module: {
     rules
   },
+  devServer: config.dev,
   plugins: [
     new ExtractTextPlugin({
       filename: 'style.css',
@@ -25,13 +27,14 @@ const config = {
       allChunks: true
     }),
     new CopyWebpackPlugin([
-        {from: './src/page', to: './page' }
+      {from: './src/page', to: './page' }
     ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
       hash: process.env.NODE_ENV === 'production'
     }),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
   ]
 };
@@ -46,4 +49,4 @@ if (process.env.NODE_ENV === 'production') {
   ]);
 }
 
-module.exports = config;
+module.exports = webpackConfig;

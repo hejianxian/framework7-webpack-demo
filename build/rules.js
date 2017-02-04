@@ -11,7 +11,8 @@ module.exports = [
   {
     test: /\.less$/,
     use: ExtractTextPlugin.extract({
-      loader: ["css-loader", "less-loader"]
+      fallbackLoader: 'style-loader',
+      loader: ["css-loader", "less-loader", "postcss-loader"]
     })
   },
   {
