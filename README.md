@@ -39,6 +39,20 @@ proxy: {
 }
 ```
 
+Some config setting, you can find in `./build/config.js`:
+
+```js
+module.exports = {
+  dev: {
+    host: 'localhost',
+    port: 8080,
+    proxy: {
+      "/api": "http://localhost:3000"
+    }
+  }
+}
+```
+
 ### Build
 
 ``` bash
