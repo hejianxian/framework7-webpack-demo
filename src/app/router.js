@@ -1,6 +1,7 @@
 'use strict';
 
 import detailModule from './detail/detail';
+import settingModule from './setting/setting';
 
 export default {
   init(){
@@ -13,6 +14,9 @@ export default {
     switch (page.name) {
       case 'detail':
         detailModule.init(page);
+        break;
+      case 'setting':
+        settingModule.init(page);
         break;
       default:
         break;
