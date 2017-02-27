@@ -1,0 +1,28 @@
+{
+  "appName": "CNode",
+  "tag": {
+    "all": "All",
+    "good": "Good",
+    "hot": "Hot",
+    "share": "Share",
+    "ask": "Ask",
+    "job": "Job"
+  },
+  "page": {
+    "detail": "Detail",
+    "setting": "Setting"
+  },
+  "message": {
+    "choose": "Choose",
+    "reply": "Reply",
+    "cancel": "Cancel",
+    "comment": "Comment",
+    "sure": "Sure",
+    "title": "Message"
+  },
+  "content": {
+    "publishDate": "Date",
+    "replayCount": "Comments",
+    "viewingCount": "Viewing"
+  }
+}
