@@ -20,9 +20,14 @@
     "sure": "确定",
     "title": "提示"
   },
-  "content": {
+  "detail": {
     "publishDate": "发布时间",
     "replayCount": "评论数",
     "viewingCount": "浏览数"
+  },
+  "setting": {
+    "title": "请选择语言",
+    "chinese": "简体中文",
+    "english": "英文"
   }
 }

@@ -20,9 +20,14 @@
     "sure": "Sure",
     "title": "Message"
   },
-  "content": {
+  "detail": {
     "publishDate": "Date",
     "replayCount": "Comments",
     "viewingCount": "Viewing"
+  },
+  "setting": {
+    "title": "Please select a language",
+    "chinese": "Chinese",
+    "english": "English"
   }
 }
