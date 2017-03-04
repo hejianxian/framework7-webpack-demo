@@ -3,10 +3,10 @@
 export default {
     alert(text, callback){
         myApp.modal({
-            title: '提示',
+            title: polyglot.t('message.title'),
             text,
             buttons: [{
-                text: '确定',
+                text: polyglot.t('message.sure'),
                 onClick(){
                     callback && callback();
                 }
@@ -15,12 +15,12 @@ export default {
     },
     confrim(text, callback){
         myApp.modal({
-            title: '提示',
+            title: polyglot.t('message.title'),
             text,
             buttons: [{
-                text: '取消'
+                text: polyglot.t('message.cancel')
             },{
-                text: '确定',
+                text: polyglot.t('message.sure'),
                 onClick(){
                     callback && callback();
                 }

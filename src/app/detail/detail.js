@@ -37,9 +37,9 @@ export default {
 
   showActionSheet(){
     var btns = [{
-        text:'回复',
+        text: polyglot.t('message.reply'),
         onClick(){
-          Modal.alert('你点击了回复');
+          Modal.alert(polyglot.t('message.text'));
         }
       }];
     showActionSheet(btns);

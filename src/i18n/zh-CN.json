@@ -3,14 +3,17 @@
   "tag": {
     "all": "全部",
     "good": "精华",
-    "hot": "置顶",
+    "hot": "热门",
     "share": "分享",
     "ask": "问答",
-    "job": "招聘"
+    "job": "招聘",
+    "language": "语言",
+    "top": "置顶",
+    "normal": "普通"
   },
   "page": {
     "detail": "详情",
-    "setting": "设置"
+    "language": "语音"
   },
   "message": {
     "choose": "请选择",
@@ -18,16 +21,22 @@
     "cancel": "取消",
     "comment": "评论",
     "sure": "确定",
-    "title": "提示"
+    "title": "提示",
+    "text": "你点击了回复"
   },
   "detail": {
     "publishDate": "发布时间",
     "replayCount": "评论数",
-    "viewingCount": "浏览数"
+    "viewingCount": "浏览数",
+    "comment": "评论"
   },
   "setting": {
     "title": "请选择语言",
     "chinese": "简体中文",
-    "english": "英文"
+    "english": "英文",
+    "save": "完成"
+  },
+  "format": {
+    "date": "YYYY年MM月DD日"
   }
 }

@@ -1,5 +1,7 @@
 'use strict';
 
+import dateFormat from 'date-fns/format';
+
 export default {
   bindEvents(events){
     for (let i = 0, l = events.length; i < l; i++) {
@@ -14,11 +16,6 @@ export default {
     return Template7.compile(tpl)(data);
   },
   publishTime(date){
-    var _date = new Date(date),
-        _m = _date.getMonth() + 1,
-        _d = _date.getDate(),
-        _h = _date.getHours(),
-        _s = _date.getMinutes();
-    return _m + '月' + _d + '日 ' + _h + ':' + _s;
+    return dateFormat(date, polyglot.t('format.date'));
   }
 };

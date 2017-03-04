@@ -24,6 +24,7 @@
     "graceful-fs": "^4.1.11",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "postcss-loader": "^1.2.2",
@@ -33,6 +34,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "date-fns": "^1.28.0",
     "framework7": "^1.5.2",
     "node-polyglot": "^2.2.2"
   }

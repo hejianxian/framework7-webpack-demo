@@ -3,13 +3,13 @@
 export function showActionSheet (buttons) {
     var normalBtn = [
         {
-            text: '请选择',
+            text: polyglot.t('message.choose'),
             label: true
         }
     ];
     var cancelBtn = [
         {
-            text: '取消',
+            text: polyglot.t('message.cancel'),
             color: 'red'
         }
     ];

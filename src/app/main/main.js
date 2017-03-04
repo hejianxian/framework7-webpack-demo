@@ -73,24 +73,24 @@ export default {
   transformData(data){
     for (var i = 0, l = data.length; i < l; i++) {
       if (data[i].top) {
-          data[i].type = '置顶';
+          data[i].type = polyglot.t("tag.top");
           continue;
       }
       switch (data[i].tab) {
         case 'share':
-          data[i].type = '分享';
+          data[i].type = polyglot.t("tag.share");
           break;
         case 'ask':
-          data[i].type = '问答';
+          data[i].type = polyglot.t("tag.ask");
           break;
         case 'job':
-          data[i].type = '招聘';
+          data[i].type = polyglot.t("tag.job");
           break;
         case 'good':
-          data[i].type = '精华';
+          data[i].type = polyglot.t("tag.good");
           break;
         default:
-          data[i].type = '普通';
+          data[i].type = polyglot.t("tag.normal");
           break;
       }
     };

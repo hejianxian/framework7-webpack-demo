@@ -1,14 +1,14 @@
  <h3 class="topic-title">{{title}}</h3>
  <div class="authr-info row">
    <img src="{{author.avatar_url}}" alt="{{author.loginname}}" width="30">
-    发布时间: {{create_at}} /
-    回复: {{js "this.replies.length"}} /
-    浏览数: {{visit_count}}
+    {{js "polyglot.t('detail.publishDate')"}}: {{create_at}} /
+    {{js "polyglot.t('detail.replayCount')"}}: {{js "this.replies.length"}} /
+    {{js "polyglot.t('detail.viewingCount')"}}: {{visit_count}}
 </div>
 <div class="content-block">
   <p>{{content}}</p>
 </div>
-<div class="content-block-title">评论</div>
+<div class="content-block-title">{{js "polyglot.t('detail.comment')"}}</div>
 <div class="list-block media-list">
   <ul>
     {{#each replies}}
