@@ -12,7 +12,7 @@ const webpackConfig = {
       app: ['./src/app/index.js']
   },
   output: {
-    path: __dirname + '/dist/',
+    path: path.resolve(__dirname, '../dist/'),
     filename: 'app.js',
     publicPath: '/'
   },
