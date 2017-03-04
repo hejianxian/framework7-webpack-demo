@@ -5,5 +5,6 @@ export default {
   SERVER_URL: 'https://cnodejs.org',
   STATUS: {
     SUCCESS: 0
-  }
+  },
+  LNG: 'locale'
 };

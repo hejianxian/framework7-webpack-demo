@@ -30,11 +30,11 @@
     "viewingCount": "浏览数",
     "comment": "评论"
   },
-  "setting": {
+  "language": {
     "title": "请选择语言",
-    "chinese": "简体中文",
+    "chinese": "中文-简体",
     "english": "英文",
-    "save": "完成"
+    "save": "保存"
   },
   "format": {
     "date": "YYYY年MM月DD日"

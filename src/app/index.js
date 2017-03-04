@@ -11,6 +11,7 @@ import Router from './router';
 import Utils from './utils/tool';
 import navTPl from './nav.html';
 import { initI18n } from './utils/i18n';
+import Constant from './utils/constant';
 
 var app = {
   init() {
@@ -25,7 +26,8 @@ var app = {
       domCache: true
     });
 
-    window.polyglot = initI18n('en');
+    var lng = localStorage.getItem(Constant.LNG) || 'zh-CN';
+    window.polyglot = initI18n(lng);
     $('#app-name').html(polyglot.t('appName'));
 
     app.renderNavList();
