@@ -25,7 +25,7 @@ npm install
 
 ```
 
-Or you can use Yarn.
+Or you can use [Yarn](https://github.com/yarnpkg/yarn).
 
 
 ### Dev
