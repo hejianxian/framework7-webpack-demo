@@ -25,6 +25,9 @@ npm install
 
 ```
 
+Or you can use Yarn.
+
+
 ### Dev
 
 ```bash
