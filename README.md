@@ -11,6 +11,8 @@
 * [Framework7](http://framework7.io/)
 * [Webpack2.0](https://webpack.js.org/)
 * [Babel](https://babeljs.io/)
+* [Less](https://github.com/less/less.js)
+* [Polyglot](https://github.com/airbnb/polyglot.js) For i18n.
 
 ### Download
 
