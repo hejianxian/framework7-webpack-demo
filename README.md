@@ -14,6 +14,18 @@
 * [Less](https://github.com/less/less.js)
 * [Polyglot](https://github.com/airbnb/polyglot.js) For i18n.
 
+
+### Template
+
+We have a base [webpack-framework7](https://github.com/workplus-templates/webpack-framework7) template, you can use [WorkPlus-cli](https://github.com/WorkPlusFE/WorkPlus-cli) to get it.
+
+```bash
+[sudo] npm install -g workplus-cli
+
+workplus start webpack-framework7 my-project
+```
+
+
 ### Download
 
 ```bash
@@ -26,14 +38,6 @@ npm install
 ```
 
 Or you can use [Yarn](https://github.com/yarnpkg/yarn).
-
-### Template
-
-We also have a base [webpack-framework7](https://github.com/workplus-templates/webpack-framework7) template, you can use [WorkPlus-cli](https://github.com/WorkPlusFE/WorkPlus-cli) to get it.
-
-```bash
-workplus start webpack-framework7 my-project
-```
 
 ### Dev
 
