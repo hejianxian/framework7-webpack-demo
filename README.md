@@ -27,6 +27,13 @@ npm install
 
 Or you can use [Yarn](https://github.com/yarnpkg/yarn).
 
+### Template
+
+We also have a base [webpack-framework7](https://github.com/workplus-templates/webpack-framework7) template, you can use [WorkPlus-cli](https://github.com/WorkPlusFE/WorkPlus-cli) to get it.
+
+```bash
+workplus start webpack-framework7 my-project
+```
 
 ### Dev
 
