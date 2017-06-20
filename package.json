@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config build/webpack.config.js -d --colors --inline",
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js -p --colors"
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js -p --colors --hide-modules --display-optimization-bailout"
   },
   "author": "Hejx",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "2.0.0-rc.2",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.10.0",
     "graceful-fs": "^4.1.11",
     "html-loader": "^0.4.4",
@@ -30,7 +30,7 @@
     "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.2.1",
+    "webpack": "3.0.0",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {

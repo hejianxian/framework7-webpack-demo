@@ -4,15 +4,15 @@ module.exports = [
   {
     test: /\.css$/,
     use: ExtractTextPlugin.extract({
-      fallbackLoader: 'style-loader',
-      loader: 'css-loader'
+      fallback: 'style-loader',
+      use: 'css-loader'
     })
   },
   {
     test: /\.less$/,
     use: ExtractTextPlugin.extract({
-      fallbackLoader: 'style-loader',
-      loader: ["css-loader", "less-loader", "postcss-loader"]
+      fallback: 'style-loader',
+      use: ["css-loader", "less-loader", "postcss-loader"]
     })
   },
   {
