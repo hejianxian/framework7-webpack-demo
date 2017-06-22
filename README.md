@@ -2,7 +2,7 @@
 
 # framework7-webpack-demo
 
-> A demo project for using Framework7 with Webpack2.0 via Babel!
+> A demo project for using Framework7 with Webpack3.0 via Babel!
 
 [Online Demo](https://hejx.herokuapp.com/f7/)
 
